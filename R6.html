@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Stark game store</title>
+    <style>
+        .bordureSearch {
+            width: 400px;
+            border-radius: 10px;
+            border: 0.5px solid #f2f2f2;
+        }
+        
+        .flexCenter {
+            display: flex;
+            align-items: center;
+        }
+
+        .texteCenter {
+            text-align: center;
+        }
+
+        .recherche {
+            height: 50px;
+            width: 230px;
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .tailleIcone {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px 0 0 10px;
+            color: black;
+        }
+
+        .tailleLogo {
+            height: 200px;
+            width: 200px;
+        }
+
+        .backGris {
+            background-color: #f2f2f2;
+        }
+
+        .backBleu {
+            background-color: rgb(56, 182, 255);
+        }
+
+        .bordureNone {
+            border: none;
+        }
+
+        .marginGaucheNoir {
+            margin-left: 50px;
+        }
+
+        .marginGaucheR6 {
+            margin-left: 20px;
+        }
+
+        .paddingRecherche {
+            padding-left: 20px;
+        }
+
+        .buttonRecherche {
+            height: 50px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .margeIcone {
+            margin-left: 15px;
+        }
+
+        .taillePHeader {
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .tailleImage {
+            width: 576px;
+            height: 324px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        body {
+            background-color: rgb(39, 39, 39);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        main {
+            width: 1400px;
+            background-color: red;
+        }
+
+        header {
+            margin-top: -40px;
+            margin-left: -40px;
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            margin-left: 600px;
+        }
+
+        video {
+            width: 576px;
+            height: 324px;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="tailleLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
+        <section>
+                <p class="texteCenter taillePHeader">Recherche de jeu</p>
+            <div class="bordureSearch flexCenter">
+                <div class="backGris flexCenter tailleIcone">
+                    <i class="fa-solid fa-magnifying-glass margeIcone"></i>
+                </div>
+                <div>
+                    <input class="recherche paddingRecherche bordureNone" type="search" placeholder="Raft, Overwatch...">
+                </div>
+                <div>
+                    <button class="backBleu buttonRecherche bordureNone">Rechercher</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="flex">
+        <img class="tailleImage marginGaucheR6" src="img/R6img.jpg" alt="R6img">
+        <img class="tailleImage marginGaucheNoir" src="img/noir.jpg" alt="noirimg">
+        <article>
+            <p>Aperçu du jeu</p>
+            <video src="img/Inside Rainbow Official Trailer – Tom Clancys Rainbow Six Siege.mp4" controls></video>
+        </article>
+    </main>
+</body>
+</html>
