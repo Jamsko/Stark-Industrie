@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Stark game store</title>
+    <style>
+        .bordureSearch {
+            width: 400px;
+            border-radius: 10px;
+            border: 0.5px solid #f2f2f2;
+        }
+        
+        .flexCenter {
+            display: flex;
+            align-items: center;
+        }
+
+        .flexColumn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .texteCenter {
+            text-align: center;
+        }
+
+        .recherche {
+            height: 50px;
+            width: 230px;
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .tailleIcone {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px 0 0 10px;
+            color: black;
+        }
+
+        .tailleLogo {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-right: 100px;
+        }
+
+        .backGris {
+            background-color: #f2f2f2;
+        }
+
+        .backBleu {
+            background-color: rgb(56, 182, 255);
+        }
+
+        .bordureNone {
+            border: none;
+        }
+
+        .styleNone {
+            list-style: none;
+        }
+
+        .marginGaucheInfo {
+            margin-left: 80px;
+        }
+
+        .marginGaucheImageJeu {
+            margin-left: 80px;
+        }
+
+        .paddingRecherche {
+            padding-left: 20px;
+        }
+
+        .buttonRecherche {
+            height: 50px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .margeIcone {
+            margin-left: 15px;
+        }
+
+        .taillePHeader {
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .tailleImage {
+            width: 576px;
+            height: 324px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .positionClassification {
+            margin-left: 800px;
+            margin-top: -300px;
+        }
+
+        .positionVideoApercu {
+            margin-top: 150px;
+            margin-left: 400px;
+        }
+
+        .tailleInfo {
+            width: 576px;
+            height: 324px;
+            border: 1px solid #f2f2f2;
+        }
+
+        .positionAchat {
+            margin-left: 750px;
+            margin-top: -328px;
+        }
+
+        body {
+            background-color: rgb(39, 39, 39);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            width: 1400px;
+        }
+
+        header {
+            margin-top: -40px;
+            margin-left: -40px;
+            height: 540px;
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            margin-left: -75px;
+        }
+
+        iframe  {
+            width: 576px;
+            height: 324px;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="tailleLogo positionLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
+        <section>
+                <p class="texteCenter taillePHeader">Recherche de jeu</p>
+            <div class="bordureSearch flexCenter">
+                <div class="backGris flexCenter tailleIcone">
+                    <i class="fa-solid fa-magnifying-glass margeIcone"></i>
+                </div>
+                <div>
+                    <input class="recherche paddingRecherche bordureNone" type="search" placeholder="Raft, Overwatch...">
+                </div>
+                <div>
+                    <button class="backBleu buttonRecherche bordureNone">Rechercher</button>
+                </div>
+            </div>
+        </section>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </header>
+    <main>
+        <img class="tailleImage marginGaucheImageJeu" src="img/R6img.jpg" alt="R6img">
+        <article class="tailleImage marginGaucheInfo tailleInfo positionAchat"></article>
+        <section>
+            <article class="tailleImage marginGaucheImageJeu">
+                <h2>
+                    À propos du jeu
+                </h2>
+                <p>
+                    Rainbow Six Siege pour PC est un jeu de tir tactique en ligne. L'accent est mis sur la destruction de l'environnement et la coopération entre les joueurs, chaque joueur prenant le contrôle d'un personnage à défendre ou à attaquer dans chaque scénario. Il s'agit notamment de la libération d'otages, du désamorçage de bombes et de la capture ou de la défense d'un point de contrôle.
+                    Le jeu démarre lentement, mais de nombreuses mises à jour de contenu téléchargeable, ainsi que le travail des développeurs, depuis sa sortie, ont permis de combler les lacunes dans le gameplay, l’intrigue et la progression. Ce jeu est maintenant reconnu comme des meilleurs jeux de son genre avec plus de 45 millions de joueurs enregistrés dans le monde.
+                </p>
+            </article>
+            <article class="positionClassification">
+                <ul class="styleNone">
+                    <li>Classification: PEGI 18</li>
+                    <li>Développeur: Ubisoft Montreal</li>
+                    <li>Editeur: Ubisoft</li>
+                    <li>Date de sortie: 1 décembre 2015</li>
+                    <li>Genre: Jeux solo, Action</li>
+                </ul>
+            </article>
+        </section>
+        <article class="flexColumn positionVideoApercu">
+            <p>Aperçu du jeu</p>
+            <iframe width="576" height="324" src="https://www.youtube.com/embed/KlbLLRdg9u8" title="Inside Rainbow Official Trailer – Tom Clancy's Rainbow Six Siege" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </main>
+</body>
+</html>
