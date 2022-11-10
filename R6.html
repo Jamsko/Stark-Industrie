@@ -68,11 +68,11 @@
             list-style: none;
         }
 
-        .marginGaucheNoir {
+        .marginGaucheInfo {
             margin-left: 80px;
         }
 
-        .marginGaucheR6 {
+        .marginGaucheImageJeu {
             margin-left: 80px;
         }
 
@@ -103,6 +103,31 @@
             border-radius: 10px 10px 10px 10px;
         }
 
+        .positionClassification {
+            margin-left: 800px;
+            margin-top: -300px;
+        }
+
+        .positionVideoApercu {
+            margin-top: 150px;
+            margin-left: 400px;
+        }
+
+        .tailleInfo {
+            width: 576px;
+            height: 324px;
+            border: 1px solid #f2f2f2;
+        }
+
+        .positionAchat {
+            margin-left: 750px;
+            margin-top: -328px;
+        }
+
+        .styleButton {
+            background-color: rgb(56, 182, 255);
+        }
+
         body {
             background-color: rgb(39, 39, 39);
             color: white;
@@ -128,7 +153,7 @@
             margin-left: -75px;
         }
 
-        video {
+        iframe  {
             width: 576px;
             height: 324px;
             border-radius: 10px 10px 10px 10px;
@@ -137,7 +162,7 @@
 </head>
 <body>
     <header>
-        <img class="tailleLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
+        <img class="tailleLogo positionLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
         <section>
                 <p class="texteCenter taillePHeader">Recherche de jeu</p>
             <div class="bordureSearch flexCenter">
@@ -154,11 +179,14 @@
         </section>
         <i class="fa-solid fa-cart-shopping"></i>
     </header>
-    <main class="flex">
-        <img class="tailleImage marginGaucheR6" src="img/R6img.jpg" alt="R6img">
-        <img class="tailleImage marginGaucheNoir" src="img/noir.jpg" alt="noirimg">
+    <main>
+        <img class="tailleImage marginGaucheImageJeu" src="img/R6img.jpg" alt="R6img">
+        <article class="tailleImage marginGaucheInfo tailleInfo positionAchat flexColumn flexCenter">
+            <h1>Rainbow Six Siege</h1>
+            <a href="https://www.instant-gaming.com/fr/406-acheter-tom-clancy-s-rainbow-six-siege-pc-jeu-ubisoft-connect-europe/" target="_blank" class="styleButton bordureNone buttonRecherche"><button>Acheter</button></a>
+        </article>
         <section>
-            <article class="tailleImage marginGaucheR6">
+            <article class="tailleImage marginGaucheImageJeu">
                 <h2>
                     À propos du jeu
                 </h2>
@@ -167,7 +195,7 @@
                     Le jeu démarre lentement, mais de nombreuses mises à jour de contenu téléchargeable, ainsi que le travail des développeurs, depuis sa sortie, ont permis de combler les lacunes dans le gameplay, l’intrigue et la progression. Ce jeu est maintenant reconnu comme des meilleurs jeux de son genre avec plus de 45 millions de joueurs enregistrés dans le monde.
                 </p>
             </article>
-            <article class="tailleImage marginGaucheNoir">
+            <article class="positionClassification">
                 <ul class="styleNone">
                     <li>Classification: PEGI 18</li>
                     <li>Développeur: Ubisoft Montreal</li>
@@ -177,9 +205,9 @@
                 </ul>
             </article>
         </section>
-        <article class="flexColumn">
+        <article class="flexColumn positionVideoApercu">
             <p>Aperçu du jeu</p>
-            <video src="img/Inside Rainbow Official Trailer – Tom Clancys Rainbow Six Siege.mp4" controls></video>
+            <iframe width="576" height="324" src="https://www.youtube.com/embed/KlbLLRdg9u8" title="Inside Rainbow Official Trailer – Tom Clancy's Rainbow Six Siege" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     </main>
 </body>
