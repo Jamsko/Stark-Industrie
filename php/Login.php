@@ -1,5 +1,7 @@
 <?php
 
+require_once "Secret.php"
+
 // Variables
 $emailInput = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
 $passInput = filter_input(INPUT_POST, "password", FILTER_UNSAFE_RAW);
@@ -21,7 +23,7 @@ if ($passInput == "" || $passInput === null) {
 }
 
 // Test
-if($error == false && $passInput == "Super"){
+if($error == false && md5($passInput) == "$superSecret"){
     $action = "action=\"../Accueil.html\"";
 }else if($error == true){
     $action = "";
