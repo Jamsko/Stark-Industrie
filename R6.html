@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,7 @@
             border-radius: 10px;
             border: 0.5px solid #f2f2f2;
         }
-        
+
         .flexCenter {
             display: flex;
             align-items: center;
@@ -87,6 +88,14 @@
             border-radius: 0 10px 10px 0;
         }
 
+        .buttonAcheter {
+            height: 50px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px 10px 10px 10px;
+        }
+
         .margeIcone {
             margin-left: 15px;
         }
@@ -127,6 +136,10 @@
             background-color: rgb(56, 182, 255);
         }
 
+        .marginAcheter {
+            margin-left: 20px;
+        }
+
         body {
             background-color: rgb(39, 39, 39);
             color: white;
@@ -142,7 +155,7 @@
 
         header {
             margin-top: -40px;
-            margin-left: -40px;
+            margin-left: -220px;
             height: 540px;
             display: flex;
             align-items: center;
@@ -152,37 +165,44 @@
             margin-left: -75px;
         }
 
-        iframe  {
+        iframe {
             width: 576px;
             height: 324px;
             border-radius: 10px 10px 10px 10px;
         }
+
+        footer {
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <img class="tailleLogo positionLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
         <section>
-                <p class="texteCenter taillePHeader">Recherche de jeu</p>
+            <p class="texteCenter taillePHeader">Recherche de jeu</p>
             <div class="bordureSearch flexCenter">
                 <div class="backGris flexCenter tailleIcone">
                     <i class="fa-solid fa-magnifying-glass margeIcone"></i>
                 </div>
                 <div>
-                    <input class="recherche paddingRecherche bordureNone" type="search" placeholder="Raft, Overwatch...">
+                    <input class="recherche paddingRecherche bordureNone" type="search"
+                        placeholder="Raft, Overwatch...">
                 </div>
                 <div>
                     <button class="backBleu buttonRecherche bordureNone">Rechercher</button>
                 </div>
             </div>
         </section>
-        <i class="fa-solid fa-cart-shopping"></i>
     </header>
     <main>
         <img class="tailleImage marginGaucheImageJeu" src="img/R6img.jpg" alt="R6img">
         <article class="tailleImage marginGaucheInfo tailleInfo positionAchat flexColumn flexCenter">
             <h1>Rainbow Six Siege</h1>
-            <a href="https://www.instant-gaming.com/fr/406-acheter-tom-clancy-s-rainbow-six-siege-pc-jeu-ubisoft-connect-europe/" target="_blank" class="styleButton bordureNone buttonRecherche"><button>Acheter</button></a>
+            <a href="https://www.instant-gaming.com/fr/406-acheter-tom-clancy-s-rainbow-six-siege-pc-jeu-ubisoft-connect-europe/" target="_blank">
+                    <button class="backBleu buttonAcheter bordureNone">Acheter</button>
+            </a>
         </article>
         <section>
             <article class="tailleImage marginGaucheImageJeu">
@@ -190,8 +210,14 @@
                     À propos du jeu
                 </h2>
                 <p>
-                    Rainbow Six Siege pour PC est un jeu de tir tactique en ligne. L'accent est mis sur la destruction de l'environnement et la coopération entre les joueurs, chaque joueur prenant le contrôle d'un personnage à défendre ou à attaquer dans chaque scénario. Il s'agit notamment de la libération d'otages, du désamorçage de bombes et de la capture ou de la défense d'un point de contrôle.
-                    Le jeu démarre lentement, mais de nombreuses mises à jour de contenu téléchargeable, ainsi que le travail des développeurs, depuis sa sortie, ont permis de combler les lacunes dans le gameplay, l’intrigue et la progression. Ce jeu est maintenant reconnu comme des meilleurs jeux de son genre avec plus de 45 millions de joueurs enregistrés dans le monde.
+                    Rainbow Six Siege pour PC est un jeu de tir tactique en ligne. L'accent est mis sur la destruction
+                    de l'environnement et la coopération entre les joueurs, chaque joueur prenant le contrôle d'un
+                    personnage à défendre ou à attaquer dans chaque scénario. Il s'agit notamment de la libération
+                    d'otages, du désamorçage de bombes et de la capture ou de la défense d'un point de contrôle.
+                    Le jeu démarre lentement, mais de nombreuses mises à jour de contenu téléchargeable, ainsi que le
+                    travail des développeurs, depuis sa sortie, ont permis de combler les lacunes dans le gameplay,
+                    l’intrigue et la progression. Ce jeu est maintenant reconnu comme des meilleurs jeux de son genre
+                    avec plus de 45 millions de joueurs enregistrés dans le monde.
                 </p>
             </article>
             <article class="positionClassification">
@@ -206,8 +232,15 @@
         </section>
         <article class="flexColumn positionVideoApercu">
             <p>Aperçu du jeu</p>
-            <iframe width="576" height="324" src="https://www.youtube.com/embed/KlbLLRdg9u8" title="Inside Rainbow Official Trailer – Tom Clancy's Rainbow Six Siege" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="576" height="324" src="https://www.youtube.com/embed/KlbLLRdg9u8"
+                title="Inside Rainbow Official Trailer – Tom Clancy's Rainbow Six Siege" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </article>
     </main>
+    <footer>
+        <p>&copy; Stark Industries | Carvalho Bryan | Saeed Jamal | Pereira Leonardo</p>
+    </footer>
 </body>
+
 </html>
