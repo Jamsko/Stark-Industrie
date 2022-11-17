@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Stark game store</title>
+    <style>
+        .bordureSearch {
+            width: 400px;
+            border-radius: 10px;
+            border: 0.5px solid #f2f2f2;
+        }
+
+        .flexCenter {
+            display: flex;
+            align-items: center;
+        }
+
+        .flexColumn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flexSpaceBetween {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .texteCenter {
+            text-align: center;
+        }
+
+        .recherche {
+            height: 50px;
+            width: 230px;
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .tailleIcone {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px 0 0 10px;
+            color: black;
+        }
+
+        .tailleLogo {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-right: 100px;
+        }
+
+        .backGris {
+            background-color: #f2f2f2;
+        }
+
+        .backBleu {
+            background-color: rgb(56, 182, 255);
+        }
+
+        .bordureNone {
+            border: none;
+        }
+
+        .styleNone {
+            list-style: none;
+        }
+
+        .marginGaucheInfo {
+            margin-left: 80px;
+        }
+
+        .marginGaucheImageJeu {
+            margin-left: 80px;
+        }
+
+        .paddingRecherche {
+            padding-left: 20px;
+        }
+
+        .buttonRecherche {
+            height: 50px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .buttonAcheter {
+            height: 50px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .margeIcone {
+            margin-left: 15px;
+        }
+
+        .taillePHeader {
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .tailleImage {
+            width: 576px;
+            height: 324px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .positionClassification {
+            margin-left: 800px;
+            margin-top: -300px;
+        }
+
+        .positionVideoApercu {
+            margin-top: 150px;
+            margin-left: 400px;
+        }
+
+        .tailleInfo {
+            width: 576px;
+            height: 324px;
+            border: 1px solid #f2f2f2;
+        }
+
+        .positionAchat {
+            margin-left: 750px;
+            margin-top: -328px;
+        }
+
+        .styleButton {
+            background-color: rgb(56, 182, 255);
+        }
+
+        .marginAcheter {
+            margin-left: 20px;
+        }
+
+        .backStock {
+            background-color: rgb(50, 50, 50);
+            width: 210px;
+            height: 25px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .taillePrix {
+            font-size: 30px;
+        }
+
+        body {
+            background-color: rgb(39, 39, 39);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            width: 1400px;
+        }
+
+        header {
+            margin-top: -40px;
+            margin-left: -220px;
+            height: 540px;
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            margin-left: -75px;
+        }
+
+        iframe {
+            width: 576px;
+            height: 324px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="tailleLogo positionLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
+        <section>
+            <p class="texteCenter taillePHeader">Recherche de jeu</p>
+            <div class="bordureSearch flexCenter">
+                <div class="backGris flexCenter tailleIcone">
+                    <i class="fa-solid fa-magnifying-glass margeIcone"></i>
+                </div>
+                <div>
+                    <input class="recherche paddingRecherche bordureNone" type="search"
+                        placeholder="Raft, Overwatch...">
+                </div>
+                <div>
+                    <button class="backBleu buttonRecherche bordureNone">Rechercher</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <img class="tailleImage marginGaucheImageJeu" src="img/nfdHeat.jpg" alt="nfdHeatImg">
+        <article class="tailleImage marginGaucheInfo tailleInfo positionAchat flexColumn flexCenter">
+            <h1>NEED FOR SPEED HEAT</h1>
+            <p class="backStock bordureNone flexCenter flexColumn">Plateforme : PC | En stock</p>
+            <p class="taillePrix">12.24.-</p>
+            <a href="https://www.instant-gaming.com/fr/5362-acheter-origin-need-for-speed-heat-pc-jeu-origin/"
+                target="_blank">
+                <button class="backBleu buttonAcheter bordureNone">Acheter</button>
+            </a>
+        </article>
+        <section>
+            <article class="tailleImage marginGaucheImageJeu">
+                <h2>
+                    À propos du jeu
+                </h2>
+                <p>
+
+                    Le joueur doit se promener dans la ville, explorer l'open world et voir ce qu'il y a à voir - au
+                    moins pendant la journée. Il y a des courses de rue légales pendant cette période, et si vous
+                    gagnez, vous gagnerez de l'argent à ces jeux. Les activités qui ont lieu pendant la journée sont des
+                    explorations et des courses, et ces deux activités sont tout à fait légales, alors n'hésitez pas à
+                    fouiner et à voir si vous pouvez trouver des secrets cachés.
+
+                    Cependant, plus votre réputation s'élève, sans tenir compte de l'attention de la police pendant un
+                    moment, plus vous êtes en mesure de débloquer de bonnes choses, des boosters et des véhicules de
+                    qualité encore plus élevée, ce qui rend l'attention de la police comme un détail apparemment mineur.
+
+                </p>
+            </article>
+            <article class="positionClassification">
+                <ul class="styleNone">
+                    <li>Classification: aucune</li>
+                    <li>Développeur: Ghost Games</li>
+                    <li>Editeur: Electronic Arts</li>
+                    <li>Date de sortie: 8 novembre 2019</li>
+                    <li>Genre: Jeux solo, Action, Aventure, Course, Sport</li>
+                </ul>
+            </article>
+        </section>
+        <article class="flexColumn positionVideoApercu">
+            <p>Aperçu du jeu</p>
+            <iframe width="1149" height="646" src="https://www.youtube.com/embed/9ewiJJe_nYI"
+                title="Need for Speed Heat - Bande-annonce officielle de présentation" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Stark Industries | Carvalho Bryan | Saeed Jamal | Pereira Leonardo</p>
+    </footer>
+</body>
+
+</html>
