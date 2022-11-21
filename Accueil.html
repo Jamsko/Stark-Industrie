@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Stark game store</title>
     <style>
-
         html * {
             margin: 0;
             padding: 0;
@@ -26,7 +26,7 @@
             font-size: 30px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-        
+
         .flexCenter {
             display: flex;
             align-items: center;
@@ -87,9 +87,19 @@
             border-radius: 10px 10px 10px 10px;
         }
 
-        a{
+        body {
+            background-color: rgb(39, 39, 39);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
             text-decoration: none;
             color: #f2f2f2;
+            height: 200px;
         }
 
         section {
@@ -97,17 +107,19 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <img class="tailleLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
         <section>
-                <p class="texteCenter taillePHeader">Recherche de jeu</p>
+            <p class="texteCenter taillePHeader">Recherche de jeu</p>
             <div class="bordureSearch flexCenter">
                 <div class="backGris flexCenter tailleIcone">
                     <i class="fa-solid fa-magnifying-glass margeIcone"></i>
                 </div>
                 <div>
-                    <input class="recherche paddingRecherche bordureNone" type="search" placeholder="Raft, Overwatch...">
+                    <input class="recherche paddingRecherche bordureNone" type="search"
+                        placeholder="Raft, Overwatch...">
                 </div>
                 <div>
                     <button class="backBleu buttonRecherche bordureNone">Rechercher</button>
@@ -116,59 +128,75 @@
         </section>
     </header>
     <main>
+
         <a href="R6.html">
-        <article>
-            <h1>Tom Clancys Rainbow Six Siege</h1>
-            <img src="img/R6img.jpg" alt="" class="borderImages">
-            <p>Jeu de tir tactique</p>
-        </article>
-    </a>
-        <article>
-            <h1>Assassin's creed syndicate</h1>
-            <img src="img/Asc.syndicate.jpg" alt="">
-            <p>Jeu d'aventure</p>
-        </article>
+            <article>
+                <h1>Tom Clancys Rainbow Six Siege</h1>
+                <img src="img/R6img.jpg" alt="image R6" class="borderImages">
+                <p>Jeu de tir tactique</p>
+            </article>
+        </a>
 
-        <article>
-            <h1>Fifa 23</h1>
-            <img src="img/Fifa23.jpg" alt="">
-            <p>Jeu de football</p>
-        </article>
+        <a href="ascSydycate.html">
+            <article>
+                <h1>Assassin's creed syndicate</h1>
+                <img src="img/Asc.syndicate.jpg" alt="image syndicate" class="borderImages">
+                <p>Jeu d'aventure</p>
+            </article>
+        </a>
 
-        <article>
-            <h1>Forza horizon 5</h1>
-            <img src="img/Forza.jpg" alt="">
-            <p>Jeu de course de voiture</p>
-        </article>
+        <a href="fifa23.html">
+            <article>
+                <h1>Fifa 23</h1>
+                <img src="img/Fifa23.jpeg" alt="image Fifa" class="borderImages">
+                <p>Jeu de football</p>
+            </article>
+        </a>
 
-        <article>
-            <h1>garrys mod</h1>
-            <img src="img/garrysMod.jpg" alt="">
-            <p>Jeu sandbox</p>
-        </article>
+        <a href="FH5.html">
+            <article>
+                <h1>Forza horizon 5</h1>
+                <img src="img/Forza.jpg" alt="image Forza" class="borderImages">
+                <p>Jeu de course de voiture</p>
+            </article>
+        </a>
 
-        <article>
-            <h1>Need for speed heat</h1>
-            <img src="img/nfdHeat.jpg" alt="">
-            <p>Jeu de course de voiture</p>
-        </article>
+        <a href="Garry's.html">
+            <article>
+                <h1>garrys mod</h1>
+                <img src="img/garrysMod.jpg" alt="image garrys" class="borderImages">
+                <p>Jeu sandbox</p>
+            </article>
+        </a>
 
-        <article>
-            <h1>overwatch 2</h1>
-            <img src="img/overwatch-2-cover.jpg" alt="">
-            <p>Jeu tir tactique</p>
-        </article>
+        <a href="nfpHeat.html">
+            <article>
+                <h1>Need for speed heat</h1>
+                <img src="img/nfdHeat.jpg" alt="image Need for speed" class="borderImages">
+                <p>Jeu de course de voiture</p>
+            </article>
+        </a>
 
-        <article>
-            <h1>PC building simulator</h1>
-            <img src="img/PcSimulator.jpg" alt="">
-            <p>Jeu de simulation</p>
-        </article>
+        <a href="NBA2K23.html">
+            <article>
+                <h1>overwatch 2</h1>
+                <img src="img/NBA2K23.jpg" alt="image nba2k" class="borderImages">
+                <p>Jeu tir tactique</p>
+            </article>
+        </a>
 
+        <a href="PcBuilding.html">
+            <article>
+                <h1>PC building simulator</h1>
+                <img src="img/PcSimulator.jpg" alt="image pc building" class="borderImages">
+                <p>Jeu de simulation</p>
+            </article>
+        </a>
 
     </main>
     <footer>
-
+        <p>&copy; Stark Industries | Carvalho Bryan | Saeed Jamal | Pereira Leonardo</p>
     </footer>
 </body>
+
 </html>
