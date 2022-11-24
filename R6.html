@@ -195,7 +195,7 @@
 
 <body>
     <header>
-        <img class="tailleLogo positionLogo" src="img/logostarkindustriesinvisible.png" alt="logo">
+        <a href="Accueil.html"><img class="tailleLogo" src="img/logostarkindustriesinvisible.png" alt="logo"></a>
         <section>
             <p class="texteCenter taillePHeader">Recherche de jeu</p>
             <div class="bordureSearch flexCenter">
@@ -203,15 +203,61 @@
                     <i class="fa-solid fa-magnifying-glass margeIcone"></i>
                 </div>
                 <div>
-                    <input class="recherche paddingRecherche bordureNone" type="search"
-                        placeholder="Raft, Overwatch...">
+                    <input class="recherche paddingRecherche bordureNone" type="search" placeholder="Raft, Overwatch..."
+                        id="search" value="" onchange="ouvrirpage()">
                 </div>
                 <div>
-                    <button class="backBleu buttonRecherche bordureNone">Rechercher</button>
+                    <button class="backBleu buttonRecherche bordureNone" type="button" id="button"
+                        onclick="ouvrirpage()" value="Chercher">Rechercher</button>
                 </div>
             </div>
         </section>
     </header>
+    <script>
+        function ouvrirpage() {
+            var a = document.getElementById("search").value;
+
+            if (a === "Assassin's Creed Syndicate") {
+                window.open("/ascSydycate.html")
+            }
+
+            if (a === "Forza Horizon 5") {
+                window.open("/FH5.html")
+            }
+
+            if (a === "Fifa 23") {
+                window.open("/fifa23.html")
+            }
+
+            if (a === "Garry's Mod") {
+                window.open("/Garry's.html")
+            }
+
+            if (a === "NBA 2K23") {
+                window.open("/NBA2K23.html")
+            }
+
+            if (a === "Need For Speed Heat") {
+                window.open("/nfpHeat.html")
+            }
+
+            if (a === "PC Building Simulator 2") {
+                window.open("/PcBuilding.html")
+            }
+
+            if (a === "Rainbow Six Siege") {
+                window.open("/R6.html")
+            }
+
+            if (a === "Raft") {
+                window.open("/Raft.html")
+            }
+
+            if (a === "The Forest") {
+                window.open("/theForest.html")
+            }
+        }
+    </script>
     <main>
         <img class="tailleImage marginGaucheImageJeu" src="img/R6img.jpg" alt="R6img">
         <article class="tailleImage marginGaucheInfo tailleInfo positionAchat flexColumn flexCenter">
