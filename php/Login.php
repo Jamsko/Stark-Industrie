@@ -37,12 +37,13 @@ if($error == false && md5($passInput) == $superSecret){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Stark Industrie</title>
 </head>
 
 <body>
     <header>
+        <img src="../img/logoStarkIndustriesinvisible.png" alt="">
         <h1>Stark game store</h1>
     </header>
     <main id="mainLogin">
@@ -53,11 +54,13 @@ if($error == false && md5($passInput) == $superSecret){
                 <input type="email" name="email" id="email" placeholder="...@eduge.ch" value="<?= $emailInput ?>" required>
                 <span><?= $errEmail ?></span>
             </div>
+            <br>
             <div class="divLogin">
                 <label for="password">Entez votre mot de passe :</label>
                 <input type="password" name="password" id="password" placeholder="******" required>
                 <span><?= $errPass ?></span>
             </div>
+            <br>
             <button type="submit">Envoyer</button>
         </form>
     </main>
