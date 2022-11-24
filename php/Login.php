@@ -1,6 +1,6 @@
 <?php
 
-require_once "Secret.php"
+require_once "Secret.php";
 
 // Variables
 $emailInput = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
@@ -63,7 +63,7 @@ if($error == false && md5($passInput) == $superSecret){
     </main>
     <footer>
         <p>&copy;Stark Industries | Carvalho Bryan | Saeed Jamal | Pereira Leonardo</p>
-        <p>Stark game store</p>
+        <p>Wistiti Game</p>
     </footer>
 </body>
 
