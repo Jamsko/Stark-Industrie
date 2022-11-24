@@ -23,7 +23,7 @@ if ($passInput == "" || $passInput === null) {
 }
 
 // Test
-if($error == false && md5($passInput) == "$superSecret"){
+if($error == false && md5($passInput) == $superSecret){
     $action = "action=\"../Accueil.html\"";
 }else if($error == true){
     $action = "";
