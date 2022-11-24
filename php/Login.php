@@ -23,7 +23,7 @@ if ($passInput == "" || $passInput === null) {
 }
 
 // Test
-if($error == false && md5($passInput) == "$superSecret"){
+if($error == false && md5($passInput) == $superSecret){
     $action = "action=\"../Accueil.html\"";
 }else if($error == true){
     $action = "";
@@ -63,7 +63,7 @@ if($error == false && md5($passInput) == "$superSecret"){
     </main>
     <footer>
         <p>&copy;Stark Industries | Carvalho Bryan | Saeed Jamal | Pereira Leonardo</p>
-        <p>Wistiti Game</p>
+        <p>Stark game store</p>
     </footer>
 </body>
 
