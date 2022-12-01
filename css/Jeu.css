@@ -1,0 +1,182 @@
+.bordureSearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texteCenter {
+    text-align: center;
+}
+
+.recherche {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.tailleIcone {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+    color: black;
+}
+
+.tailleLogo {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.backGris {
+    background-color: #f2f2f2;
+}
+
+.backBleu {
+    background-color: rgb(56, 182, 255);
+}
+
+.bordureNone {
+    border: none;
+}
+
+.styleNone {
+    list-style: none;
+}
+
+.marginGaucheInfo {
+    margin-left: 80px;
+}
+
+.marginGaucheImageJeu {
+    margin-left: 80px;
+}
+
+.paddingRecherche {
+    padding-left: 20px;
+}
+
+.buttonRecherche {
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+.buttonAcheter {
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.margeIcone {
+    margin-left: 15px;
+}
+
+.taillePHeader {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tailleImage {
+    width: 576px;
+    height: 324px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.positionClassification {
+    margin-left: 800px;
+    margin-top: -300px;
+}
+
+.positionVideoApercu {
+    margin-top: 150px;
+    margin-left: 400px;
+}
+
+.tailleInfo {
+    width: 576px;
+    height: 324px;
+    border: 1px solid #f2f2f2;
+}
+
+.positionAchat {
+    margin-left: 750px;
+    margin-top: -328px;
+}
+
+.styleButton {
+    background-color: rgb(56, 182, 255);
+}
+
+.marginAcheter {
+    margin-left: 20px;
+}
+
+.backStock {
+    background-color: rgb(50, 50, 50);
+    width: 210px;
+    height: 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.taillePrix {
+    font-size: 30px;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 1400px;
+}
+
+header {
+    margin-top: -40px;
+    margin-left: -220px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    margin-left: -75px;
+}
+
+iframe {
+    width: 576px;
+    height: 324px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
