@@ -12,6 +12,7 @@ $errPass = "";
 $action = "";
 
 // Verification
+
 if ($emailInput == "" || $emailInput === false || $emailInput === null) {
     $error = true;
     $errEmail = "Email invalide";
@@ -47,22 +48,25 @@ if($error == false && md5($passInput) == $superSecret){
         <h1>Stark game store</h1>
     </header>
     <main id="mainLogin">
-        <form method="post" <?= $action ?>>
-            <h2 id="h2Login">Login</h2>
-            <div class="divLogin">
-                <label for="email">Enter votre email : </label>
-                <input type="email" name="email" id="email" placeholder="...@eduge.ch" value="<?= $emailInput ?>" required>
-                <span><?= $errEmail ?></span>
-            </div>
-            <br>
-            <div class="divLogin">
-                <label for="password">Entez votre mot de passe :</label>
-                <input type="password" name="password" id="password" placeholder="******" required>
-                <span><?= $errPass ?></span>
-            </div>
-            <br>
-            <button type="submit">Envoyer</button>
-        </form>
+        <section>
+            <form method="post" <?= $action ?>>
+                <h2 id="h2Login">Login</h2>
+                <br>
+                <div class="divLogin">
+                    <label for="email">Enter votre email : </label>
+                    <input type="email" name="email" id="email" placeholder="...@eduge.ch" value="<?= $emailInput ?>" required>
+                    <span><?= $errEmail ?></span>
+                </div>
+                <br>
+                <div class="divLogin">
+                    <label for="password">Entez votre mot de passe :</label>
+                    <input type="password" name="password" id="password" placeholder="******" required>
+                    <span><?= $errPass ?></span>
+                </div>
+                <br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy;Stark Industries | Carvalho Bryan | Saeed Jamal | Pereira Leonardo</p>
